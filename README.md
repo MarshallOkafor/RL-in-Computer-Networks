@@ -9,14 +9,14 @@ Visit this **[Download image](https://google.com)** to get the VM image that con
 # Load kernel module
 
 The `kernel_module` folder includes files for the kernel implementation of the _**OWL**_ algorithm.
-In order to load the _**OWL**_ Linux kernel modular congestion control algorithm, run the following commands:
+After importimg and starting the virtual appliance, run the following commands below to load the _**OWL**_ Linux kernel module congestion control algorithm:
 
 ```bash
 $ cd kernel_module   # change into the kernel module dir
 $ sudo insmod tcp_owl.ko    # load the module
 ```
 
-After the module has been loaded check "owl" should appear among the available congestion control algorithms by using the command below:  
+After the module has been loaded, check to ensure that _**OWL**_ is now listed among the available congestion control algorithms by using the command below:  
 
 ```bash
 $ cat /proc/sys/net/ipv4/tcp_available_congestion_control
