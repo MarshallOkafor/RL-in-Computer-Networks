@@ -12,31 +12,31 @@ The `kernel_module` folder includes files for the kernel implementation of the _
 In order to load the _**OWL**_ Linux kernel modular congestion control algorithm, run the following commands:
 
 ```bash
-$cd kernel_module   # change into the kernel module dir
-$sudo insmod tcp_owl.ko    # load the module
+$ cd kernel_module   # change into the kernel module dir
+$ sudo insmod tcp_owl.ko    # load the module
 ```
 
 After the module has been loaded check "owl" should appear among the available congestion control algorithms by using the command below:  
 
 ```bash
-$cat /proc/sys/net/ipv4/tcp_available_congestion_control
+$ cat /proc/sys/net/ipv4/tcp_available_congestion_control
 reno cubic owl  # output
 ```
 
 Then config "owl" as default congestion control for TCP
 ```bash
-$sudo su    # switch to root user
-$echo owl > /proc/sys/net/ipv4/tcp_congestion_control
+$ sudo su    # switch to root user
+$ echo owl > /proc/sys/net/ipv4/tcp_congestion_control
 ```
 
 or
 ```bash
-$sudo sysctl -w net.ipv4.tcp_congestion_control=owl
+$ sudo sysctl -w net.ipv4.tcp_congestion_control=owl
 ```
 
 To unload the module from the kernel, run:
 ```bash
-$sudo rmmod owl
+$ sudo rmmod owl
 ```
 
 # Test _**OWL**_
