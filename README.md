@@ -51,5 +51,13 @@ The behavior of _**OWL**_ can be easily experienced starting a communication, e.
 5. Observe the performance of _**OWL**_ congestion control algorithm.
 
 ## mahimahi
-To reproduce many different link conditions we use [Mahimahi](http://mahimahi.mit.edu/) network emulation tool.
+To reproduce many different link conditions we use [Mahimahi](http://mahimahi.mit.edu/) network emulation tool.  
 
+To test the _**OWL**_ protocol with mahimahi tool, use the following steps below:
+
+1. Start the iPerf3 server on one terminal using the command ```./server.sh```.
+2. Open a new terminal and enter the command ```mm-delay 50```. This starts up a mahimahi shell with a specified network delay of 50 milliseconds. An example of the mahimahi shell is shown below:
+```
+[delay 50 ms] osboxes@osboxes:~$
+```
+3. On thesame mahimahi shell, start the mahimahi iPerf3 client on the terminal using the command ```./mahi-mahi_client.sh```. In the script, the iPerf3 client uses the mahimahi default namespace IP address to connect with the iPerf3 server with the specified delay on the mahimahi shell.
