@@ -12,6 +12,7 @@ The `kernel_module` folder includes files for the kernel implementation of the _
 After importimg and starting the virtual appliance, run the following commands below to load the _**OWL**_ Linux kernel module congestion control algorithm:
 
 ```bash
+$ cd tcp-owl   # change into OWL dir
 $ cd kernel_module   # change into the kernel module dir
 $ sudo insmod tcp_owl.ko    # load the module
 ```
