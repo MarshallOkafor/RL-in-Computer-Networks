@@ -4,7 +4,7 @@ This repo is mainly intended for NOMS 2023 tutorial and outlines the steps on ho
 For simplicity and ease of setup, we provisioned and packaged a VM with _**OWL**_ already installed and setup. Below are detailed step on how to retrieve the VM and test out the _**OWL**_ application.
 
 # Get the VM
-Visit this **[Download image](https://www.dropbox.com/t/NcbTEn25mcHNvEbn)** to get the VM image that contains a preinstalled _**OWL**_ application. The image format is in Open Virtual Appliance (OVA) and can be imported into any virtualization platform of your choice. We conducted our test of the image using Oracle virtualbox, hence we recommend that you use Oracle virtualbox.
+Visit this **[Download image](https://www.dropbox.com/sh/euk6b029w1u38mc/AACAt_UIC3dmL6IF-EWUuODMa?dl=0)** to get the VM image that contains a preinstalled _**OWL**_ application. The image format is in Open Virtual Appliance (OVA) and can be imported into any virtualization platform of your choice. We conducted our test of the image using Oracle virtualbox, hence we recommend that you use Oracle virtualbox.
 
 The credentials are:
 ```bash
