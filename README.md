@@ -48,6 +48,14 @@ $ sudo rmmod owl
 
 # Test _**OWL**_
 
+## Run the RL model
+
+To train the RL component, start the algorithm in the `model` directory by running:
+```bash
+$ cd model
+$ PYTHONPATH=../ python3 train_model.py 
+```
+
 ## iperf
 The behavior of _**OWL**_ can be easily experienced starting a communication, e.g., using [iperf](https://iperf.fr/iperf-download.php). To test the application using iperf, follow the steps below:  
 
@@ -56,6 +64,14 @@ The behavior of _**OWL**_ can be easily experienced starting a communication, e.
 3. Start the iperf server by running the server script in one of the terminals by entering the command ```./server.sh```.
 4. In the other terminal, start the client script by entering the command ```./client.sh```.
 5. Observe the performance of _**OWL**_ congestion control algorithm.
+
+## Reward engineering
+
+The reward equation is set in the  ```environment/kernel_env.py``` file as in the figure:
+
+![alt text](https://www.dropbox.com/t/ICBKq9GaXInT39vp)
+
+## Pick your own reward to beat other participants
 
 ## mahimahi
 To reproduce many different link conditions we use [Mahimahi](http://mahimahi.mit.edu/) network emulation tool.  
