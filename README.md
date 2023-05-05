@@ -11,6 +11,9 @@ The credentials are:
 username: osboxes.org
 password: osboxes.org
 ```
+### Possible errors
+
+In case the VM is not starting, you may try to: increment the memory size ```Setting/System/Base Memory``` to at least ```1024 MB``` and under ```Processor``` tab to more than ```2```.
 
 # Load kernel module
 
