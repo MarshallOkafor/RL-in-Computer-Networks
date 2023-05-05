@@ -67,11 +67,26 @@ The behavior of _**OWL**_ can be easily experienced starting a communication, e.
 
 ## Reward engineering
 
-The reward equation is set in the  ```environment/kernel_env.py``` file as in the figure:
+The reward equation is set in the  ```tcp-owl/environment/kernel_env.py``` file as in the figure:
 
 ![alt text](./screens/get_reward.png)
 
+Where ```self.delta``` and ```self.beta``` are two coefficients determining the importance of packet losses and RTT.
+
+We can try to change these values in ```tcp-owl/model/config1.ini``` and see the effects, e.g.,
+```bash
+delta = 0.5 beta = 0.0
+delta = 0.5 beta 0.3
+delta = 0.0 beta = 0.5
+```
+
 ## Pick your own reward to beat other participants
+
+Now choose the combination that in your mind might perform better and try to maximize the throughput (ideally it should be 100 Mbps).
+
+```bash
+$ ./client.sh
+```
 
 ## mahimahi
 To reproduce many different link conditions we use [Mahimahi](http://mahimahi.mit.edu/) network emulation tool.  
