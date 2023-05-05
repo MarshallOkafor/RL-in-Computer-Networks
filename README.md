@@ -69,7 +69,7 @@ The behavior of _**OWL**_ can be easily experienced starting a communication, e.
 
 The reward equation is set in the  ```environment/kernel_env.py``` file as in the figure:
 
-![alt text](https://www.dropbox.com/s/r8974lnwf17qoqz/get_reward.png?dl=0)
+![alt text](./screens/get_reward.png)
 
 ## Pick your own reward to beat other participants
 
