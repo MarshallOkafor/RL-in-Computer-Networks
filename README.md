@@ -1,4 +1,4 @@
-# Applications of Reinforcement Learning to Computer Networks
+# Application of Reinforcement Learning to Computer Networks
 This repo outlines the steps on how to use the _**OWL**_ application in a VM running ```Linux``` operating system or on a ```Linux``` standalone computer. The original repository that contains the implementation of  _**OWL**_ can be found here _**[tcp-owl](https://github.com/alessiosac/tcp-owl)**_.
 
 For simplicity and ease of setup, we provisioned and packaged a VM with _**OWL**_ already installed and setup. Below are detailed step on how to retrieve the VM and test out the _**OWL**_ application.
