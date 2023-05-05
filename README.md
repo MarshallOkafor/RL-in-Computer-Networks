@@ -6,6 +6,12 @@ For simplicity and ease of setup, we provisioned and packaged a VM with _**OWL**
 # Get the VM
 Visit this **[Download image](https://www.dropbox.com/t/NcbTEn25mcHNvEbn)** to get the VM image that contains a preinstalled _**OWL**_ application. The image format is in Open Virtual Appliance (OVA) and can be imported into any virtualization platform of your choice. We conducted our test of the image using Oracle virtualbox, hence we recommend that you use Oracle virtualbox.
 
+The credentials are:
+```bash
+username: osboxes.org
+password: osboxes.org
+```
+
 # Load kernel module
 
 The `kernel_module` folder includes files for the kernel implementation of the _**OWL**_ algorithm.
