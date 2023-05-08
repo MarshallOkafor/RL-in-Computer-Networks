@@ -102,5 +102,6 @@ To test the _**OWL**_ protocol with mahimahi tool, use the following steps below
 [delay 50 ms] osboxes@osboxes:~$
 ```
 3. On thesame mahimahi shell, start the mahimahi iPerf3 client on the terminal using the command ```./mahi-mahi_client.sh```. In the script, the iPerf3 client uses the mahimahi default namespace IP address to connect with the iPerf3 server with the specified delay on the mahimahi shell.
- 
- file:///home/marshall/Pictures/Screenshots/mahimahi_throughput.png
+
+![mahimahi_throughput](https://user-images.githubusercontent.com/89559173/236727520-347ccc42-7c8b-42dd-a38a-ab0a8a2d2bf3.png)
+
